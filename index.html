@@ -4,8 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="javascript/form.js" defer></script>
   </head>
   <body>
-    
+    <div class="container">
+      <div class="image-section">
+        <div class="image-text-container">
+          <div class="image-text">
+            <img src="images/odin-lined.png" alt="the odin project logo" />
+            <h1 class="image-logo-text">ODIN</h1>
+          </div>
+        </div>
+        <div class="image-credit">
+          <p>
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+            on
+            <a
+              href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="form-text-section">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-section">
+          <p>Let's do this!</p>
+          <form id="sign-up-form">
+            <section>
+              <p>
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  placeholder="John"
+                />
+              </p>
+              <p>
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  required
+                  placeholder="Wick"
+                />
+              </p>
+              <p>
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="j.wick@msn.com"
+                />
+              </p>
+              <p>
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                  placeholder="226-420-6969"
+                />
+              </p>
+              <p>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required />
+              </p>
+              <p>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </p>
+            </section>
+          </form>
+          <button type="submit" form="sign-up-form" value="submit">
+            Create Account
+          </button>
+          <p class="account-already">
+            Already have an account? <a href="">Log in</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
