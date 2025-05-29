@@ -106,6 +106,7 @@ input {
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #e5e7eb;
+  outline: none;
 }
 
 input[type="password"]:invalid {
@@ -113,6 +114,6 @@ input[type="password"]:invalid {
 }
 
 input:focus {
-  border: 1px solid #d7d8db;
-  box-shadow: red;
+  box-shadow: 1px 1px 6px rgba(5, 44, 87, 0.5);
+  border: 1px solid blue;
 }
