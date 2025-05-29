@@ -13,12 +13,7 @@
 body,
 html {
   height: 100%;
-  /* overflow: hidden; */
-}
-
-input,
-label {
-  display: block;
+  overflow: hidden;
 }
 
 a {
@@ -26,7 +21,6 @@ a {
 }
 
 .container {
-  border: 2px solid black;
   display: flex;
   height: 100%;
   width: 100%;
@@ -72,16 +66,7 @@ img {
 .image-credit {
   text-align: center;
   opacity: 0.75;
-  margin-top: 700px;
-}
-
-.form-container {
-}
-
-.form-text-section {
-}
-
-.form-section {
+  margin-top: 60vh;
 }
 
 button {
@@ -96,4 +81,38 @@ button {
 .account-already a {
   color: #596d48;
   text-decoration: none;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px;
+}
+
+#sign-up-form p {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid #d7d8db;
+  box-shadow: red;
 }
