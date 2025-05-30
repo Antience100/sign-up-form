@@ -43,8 +43,8 @@
         </div>
         <div class="form-section">
           <p>Let's do this!</p>
-          <form id="sign-up-form">
-            <p>
+          <form>
+            <div class="form-group">
               <label for="first-name">FIRST NAME</label>
               <input
                 type="text"
@@ -53,8 +53,8 @@
                 required
                 placeholder="John"
               />
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
               <label for="last-name">LAST NAME</label>
               <input
                 type="text"
@@ -63,8 +63,8 @@
                 required
                 placeholder="Wick"
               />
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
               <label for="email">EMAIL</label>
               <input
                 type="email"
@@ -73,8 +73,8 @@
                 required
                 placeholder="j.wick@msn.com"
               />
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
               <label for="phone-number">PHONE NUMBER</label>
               <input
                 type="tel"
@@ -83,12 +83,12 @@
                 required
                 placeholder="226-420-6969"
               />
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
               <label for="password">PASSWORD</label>
               <input type="password" name="password" id="password" required />
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
               <label for="confirm-password">CONFIRM PASSWORD</label>
               <input
                 type="password"
@@ -96,14 +96,16 @@
                 id="confirm-password"
                 required
               />
-            </p>
+            </div>
           </form>
+          <div class="button-section">
           <button type="submit" form="sign-up-form" value="submit">
             Create Account
           </button>
           <p class="account-already">
             Already have an account? <a href="">Log in</a>
           </p>
+        </div>
         </div>
       </div>
     </div>

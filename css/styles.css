@@ -14,6 +14,7 @@ body,
 html {
   height: 100%;
   overflow: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
@@ -34,8 +35,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 30%;
-  height: 100%;
+  width: 40vw;
+  height: 100vw;
 }
 
 img {
@@ -83,7 +84,34 @@ button {
   text-decoration: none;
 }
 
-#sign-up-form {
+.form-section {
+  width: 60vw;
+  height: 40vh;
+  box-shadow: 0 2px 6px rgba(5, 44, 87, 0.5);
+}
+
+.form-section p {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 200px 20px 20px;
+}
+
+.form-group {
+  width: calc(40% - 10px);
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  margin: 20px;
+}
+
+/* #sign-up-form {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -95,7 +123,7 @@ button {
   flex-direction: column;
   flex: 1 1 45%;
   min-width: 200px;
-}
+} */
 
 label {
   font-weight: bold;
@@ -116,4 +144,18 @@ input[type="password"]:invalid {
 input:focus {
   box-shadow: 1px 1px 6px rgba(5, 44, 87, 0.5);
   border: 1px solid blue;
+}
+
+.button-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-section button {
+  margin-left: 50px;
+}
+
+.button-section p {
+  font-size: 1rem;
 }
