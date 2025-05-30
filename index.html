@@ -43,7 +43,7 @@
         </div>
         <div class="form-section">
           <p>Let's do this!</p>
-          <form>
+          <form id="sign-up-form">
             <div class="form-group">
               <label for="first-name">FIRST NAME</label>
               <input
@@ -52,6 +52,7 @@
                 name="first-name"
                 required
                 placeholder="John"
+                maxlength="50"
               />
             </div>
             <div class="form-group">
@@ -62,6 +63,7 @@
                 id="last-name"
                 required
                 placeholder="Wick"
+                maxlength="50"
               />
             </div>
             <div class="form-group">
@@ -82,6 +84,9 @@
                 id="phone-number"
                 required
                 placeholder="226-420-6969"
+                maxlength="12"
+                pattern="(\(\d{3}\)\s?|\d{3}-)\d{3}-\d{4}"
+                title="Please enter in the format 123-456-7890"
               />
             </div>
             <div class="form-group">
@@ -99,13 +104,13 @@
             </div>
           </form>
           <div class="button-section">
-          <button type="submit" form="sign-up-form" value="submit">
-            Create Account
-          </button>
-          <p class="account-already">
-            Already have an account? <a href="">Log in</a>
-          </p>
-        </div>
+            <button type="submit" form="sign-up-form" value="submit">
+              Create Account
+            </button>
+            <p class="account-already">
+              Already have an account? <a href="">Log in</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

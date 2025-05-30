@@ -70,13 +70,18 @@ img {
   margin-top: 60vh;
 }
 
-button {
-  background-color: #596d48;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  width: 144px;
-  height: 36px;
+.form-text-section {
+  height: 24vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-text-section p {
+  width: 600px;
 }
 
 .account-already a {
@@ -146,6 +151,10 @@ input:focus {
   border: 1px solid blue;
 }
 
+input:invalid {
+  border: 2px dashed red;
+}
+
 .button-section {
   margin-top: 100px;
   display: flex;
@@ -154,6 +163,13 @@ input:focus {
 
 .button-section button {
   margin-left: 50px;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 180px;
+  height: 45px;
+  font-weight: bold;
 }
 
 .button-section p {
